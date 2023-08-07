@@ -1,0 +1,46 @@
+import java.util.Scanner;
+class underage extends Exception{
+  private int age;
+      public underage(int age)
+      {
+              this.age=age;
+      }
+
+   public  String tostring()
+   {
+       return "under age"+age;
+   }
+}
+class demo{
+   public  void test(int age)throws underage
+    {
+        if(age<18)
+        {
+         throw new underage(age);
+        }
+        else
+        {
+                System.out.println("eligible");
+        }
+    }
+
+}
+public class exceptionO8{
+       public static void main(String []args)
+        {
+          Scanner sc= new Scanner(System.in);
+           try{
+                System.out.println("enter age");int age=sc.nextInt();
+                demo obj =new demo();
+                obj.test(age);
+           } catch(underage e)
+           {
+              System.out.println(e);
+           }
+
+
+
+        }
+
+}
+

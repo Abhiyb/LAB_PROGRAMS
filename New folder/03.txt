@@ -1,0 +1,27 @@
+class  room{
+  private int roomNo;
+  private String roomType;
+  private double roomArea;
+  public void setdata(int a,String b,double c)
+  {
+      roomNo=a;
+      roomType=b;
+      roomArea=c;
+  }
+  public void getdata()
+  {
+      System.out.println("RoomNo "+ roomNo );
+      System.out.println("RoomType "+roomType);
+      System.out.println("RoomArea "+roomArea);
+  }
+}
+class  O3room_class {
+    public static void main(String[] args) {
+        // System.out.println("Hello, World!");
+         room obj =new  room();
+
+        obj.setdata(1,"ACroom",3000);
+        obj.getdata();
+    }
+}
+~

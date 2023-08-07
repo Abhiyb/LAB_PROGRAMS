@@ -1,0 +1,21 @@
+interface test{
+  void square(int n);
+  default void square(int n,int m)
+  {
+          System.out.println(n*n*m);
+  }
+}
+class Arithmetic implements test{
+       public void  square(int n)
+          {
+           System.out.println("area of square :"+n*n);
+          }
+}
+public class interfaceO6{
+   public static void main(String [] args){
+
+        Arithmetic obj=new  Arithmetic();
+        obj.square(6);
+        obj.square(7,1);
+   }
+}

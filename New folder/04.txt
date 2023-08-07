@@ -1,0 +1,46 @@
+class circle{
+    private double radius;
+    private String color;
+    circle()
+    {
+      radius=1.0;
+      color="red";
+    }
+    circle(double radius)
+    {
+      this.radius=radius;
+      color="red";
+    }
+    circle(double radius,String color){
+        this.radius=radius;
+        this.color=color;
+    }
+   public void setRadius(double radius)
+    {
+        this.radius=radius;
+    }
+   public void setColor(String color){
+        this.color=color;
+    }
+    double getRadius()
+    {
+        return radius;
+    }
+    String getColor(){
+        return color;
+    }
+    double getArea()
+    {
+            return (22/7)*radius*radius;
+    }
+}
+ public class O4circle_class {
+    public static void main(String[] args)
+    {
+        circle obj =new circle(2.9);
+        obj.setRadius(4);
+        System.out.println(obj.getRadius());
+        System.out.println(obj.getColor());
+        System.out.println(obj.getArea());
+    }
+}

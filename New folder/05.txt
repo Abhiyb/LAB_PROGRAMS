@@ -1,0 +1,55 @@
+class shape{
+
+ public void draw()
+ {
+
+  System.out.println("draw shape");
+
+ }
+ public void erase()
+ {
+  System.out.println("erase shape");
+ }
+
+}
+class circle extends shape{
+
+public void draw()
+ {
+  System.out.println("draw circle");
+ }
+
+  public void erase()
+ {
+  System.out.println("erase circle");
+ }
+
+}
+class triangle extends shape{
+
+public void draw()
+ {
+  System.out.println("draw triangle");
+ }
+
+ public void erase()
+ {
+  System.out.println("erase triangle");
+ }
+
+}
+class  polymorphism05{
+   public static void main(String [] args)
+   {
+      shape s=new shape();
+      triangle t=new triangle();
+      circle c=new circle();
+      s.draw();
+      s.erase();
+      t.draw();
+      t.erase();
+      c.draw();
+      c.erase();
+   }
+
+}
